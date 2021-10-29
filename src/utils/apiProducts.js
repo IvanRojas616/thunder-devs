@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const port = "https://radiant-wildwood-55039.herokuapp.com";
+const APIdomain = "https://radiant-wildwood-55039.herokuapp.com";
 
 export const getToken = () => {
   return  `Bearer ${localStorage.getItem("token")}`;
@@ -9,7 +9,7 @@ export const getToken = () => {
 export const retrieveAllProducts = async (successCallback, errorCallBack) => {
   const options = {
     method: "GET",
-    url: `http://localhost:${port}/api/v1/products`,
+    url: `${APIdomain}/api/v1/products`,
     headers: {
       Authorization: getToken(),
     },
@@ -21,7 +21,7 @@ export const retrieveAllProducts = async (successCallback, errorCallBack) => {
 export const createProduct = async (data, successCallback, errorCallback) => {
   const options = {
     method: "POST",
-    url: `http://localhost:${port}/api/v1/products/create-product`,
+    url: `${APIdomain}/api/v1/products/create-product`,
     headers: { "Content-Type": "application/json",
     Authorization: getToken(), },
     data,
@@ -38,7 +38,7 @@ export const editProduct = async (
 ) => {
   const options = {
     method: "PATCH",
-    url: `http://localhost:${port}/api/v1/products/update-product/${idProduct}`,
+    url: `${APIdomain}/api/v1/products/update-product/${idProduct}`,
     headers: { "Content-Type": "application/json",
     Authorization: getToken(), },
     data,
@@ -49,7 +49,7 @@ export const editProduct = async (
 export const deleteProduct = async (id, successCallback, errorCallback) => {
   const options = {
     method: "DELETE",
-    url: `http://localhost:${port}/api/v1/products/delete/${id}`,
+    url: `${APIdomain}/api/v1/products/delete/${id}`,
     headers: { "Content-Type": "application/json",
     Authorization: getToken(), },
   };

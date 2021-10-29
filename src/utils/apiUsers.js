@@ -6,7 +6,7 @@ const port = 4304;
 export const retrieveAllUsers = async (successCallback, errorCallback) => {
   const options = {
     method: "GET",
-    url: `http://localhost:${port}/api/v1/users/`,
+    url: `${APIdomain}/api/v1/users/`,
     headers: {
       Authorization: getToken(),
     },
@@ -19,7 +19,7 @@ export const retrieveDataUser = async (successCallback, errorCallBack) => {
   const options = {
     method: "GET",
     //here is a dummy or self url
-    url: `http://localhost:${port}/api/v1/users/self`,
+    url: `${APIdomain}/api/v1/users/self`,
     headers: {
       Authorization: getToken(),
     },
@@ -31,7 +31,7 @@ export const retrieveDataUser = async (successCallback, errorCallBack) => {
 export const editUser = async (id, data, successCallback, errorCallback) => {
   const options = {
     method: "PATCH",
-    url: `http://localhost:${port}/api/v1/users/edit/${id}`,
+    url: `${APIdomain}/api/v1/users/edit/${id}`,
     headers: { "Content-Type": "application/json", Authorization: getToken() },
     data,
   };
