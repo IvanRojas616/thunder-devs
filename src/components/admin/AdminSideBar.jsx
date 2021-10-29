@@ -11,7 +11,7 @@ const AdminSideBar = () => {
 
     const closeSession = () => {
         localStorage.clear();
-        logout({ returnTo: "http://localhost:3000/" });
+        logout({ returnTo: "https://afternoon-forest-65625.herokuapp.com/" });
     }
     return (
         <nav className="hidden lg:flex lg:w-72 border border-gray-300 h-full flex-col bg-gray-200 p-2">

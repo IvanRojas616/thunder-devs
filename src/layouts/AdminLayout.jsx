@@ -29,7 +29,7 @@ const AdminLayout = ({ children }) => {
                 (error) => {
                     setLoadingUserInformation(false);
                     console.log("state error(rejected): ",error);
-                    logout({returnTo:"http://localhost:3000/"});
+                    logout({returnTo:"https://afternoon-forest-65625.herokuapp.com/"});
                 }
             );
         };
