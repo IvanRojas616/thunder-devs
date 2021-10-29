@@ -26,7 +26,7 @@ function App() {
     <Auth0Provider
       domain="dev-w8mlenzq.us.auth0.com"
       clientId="Xs8RGslfjoUAmaOnhZ9Oi9vLyMi1J9r2"
-      redirectUri="http://localhost:3000/admin"
+      redirectUri="https://afternoon-forest-65625.herokuapp.com/admin"
       audience="https://authtokenthunder/"
       cacheLocation="localstorage"
     >
