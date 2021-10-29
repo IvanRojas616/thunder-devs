@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&family=Ubunt&family=Montserrat:wght@600&display=swap");
+
+
+
+.navHomeFont > ul > li > button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.fontMain{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+.bgApp {
+  background: #11998e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #38ef7d,
+    #11998e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.footerFont > span {
+  font-family: "Ubuntu", sans-serif;
+}
+.buttonColor {
+  background: #0061ff;
+  transform: scale(1.0);
+  transition: 0.7s;
+}
+.buttonColor:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.bgMain {
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
