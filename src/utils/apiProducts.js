@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const APIdomain = "https://radiant-wildwood-55039.herokuapp.com";
+const port = "https://radiant-wildwood-55039.herokuapp.com";
 
 export const getToken = () => {
   return  `Bearer ${localStorage.getItem("token")}`;
