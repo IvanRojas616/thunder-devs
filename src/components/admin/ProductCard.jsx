@@ -25,7 +25,7 @@ const ProductCard = ({ product, executeEffectDependency, make}) => {
 
     return ( 
         <li className="flex flex-col bg-indigo-500 shadow-lg rounded-lg m-2 p-2 w-52 items-center">
-            <img src="http://cdn.onlinewebfonts.com/svg/img_117575.png" alt={product.name} className="w-24 h-24 m-2 shadow-md bg-gray-300 rounded mb-4 p-2"/>
+            <img src="https://cdn0.iconfinder.com/data/icons/cosmo-layout/40/box-512.png" alt={product.name} className="w-24 h-24 m-2 shadow-md bg-gray-300 rounded mb-4 p-2"/>
             <p className="text-center text-white">{product.idProduct}</p>
             <p className="text-center text-white w-28 h-12 break-words">{product.description}</p>
             <p className="text-center text-white">{product.unitPrice}</p>
